@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Divas Shop</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Cliente</h2>
+        <form action="/cadastrar_cliente" method="POST">
+        <!--Campo para o nome completo do cliente-->
+        <lapel for="nome">Nome Completo:</lapel>
+        <input type="text" id="nome" name="none" required>
+        <!--Campo para o e-mail do cliente-->
+        <lapel for="email">E-mail:</lapel>
+        <input type="email" id="email" name="email" required>
+        <!--Campo para o telefone do cliente-->
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+        <!-- Campo para a data de nascimento do cliente-->
+         <label for="nascimento">Data de nascimento:</label>
+         <input type="date" id="nascimento" name="nascimento" required>
+         <!--Campo para o endereço do cliente-->
+         <label for="endereco">Endereço:</label>
+         <input type="text" id="endereco" name="endereco" required>
+         <!--Botão de envio do formulário-->
+         <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    
+</body>
+</html>

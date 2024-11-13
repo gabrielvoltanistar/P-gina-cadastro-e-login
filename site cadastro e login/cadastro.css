@@ -1,0 +1,140 @@
+/*Estilos gerais da página*/
+body {
+    font-family: Arial, sans-serif;
+    background-color:#F1C27D;
+    padding: 20px;
+  }
+  /* EStilo para o container que envolve o formulário*/
+  .container{
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 1);
+    .container h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    /* Estilos dos labels e inputs */
+    form label {
+        display: block;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+    }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #333;
+    }
+    
+    form input[type="text"]:focus,
+    form input[type="email"]:focus,
+    form input[type="tel"]:focus,
+    form input[type="date"]:focus {
+        border-color: #4A90E2;
+        outline: none;
+    }
+    
+    /* Estilo do botão de envio */
+    form button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #F1C27D;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    form button[type="submit"]:hover {
+        background-color: #357ABD;
+    }
+  }
+    /* DROPDOWN */
+  /* estilo do menu do dropdown */
+  nav{
+      background-color: #000000;
+      padding: 10px 0;
+  }
+  
+  nav ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+  }
+  
+  nav ul li{
+  position: relative; /* Necessário para o posicionamento do dropdown */
+  margin: 0 15px;
+  }
+  
+  nav ul li a{
+      color: #F1C27D;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px;
+      display: block;
+      /* Torna o link clicável em toda a área */
+      transition: color 0.3s;
+  }
+  
+  nav ul li a:hover{
+      color:#C0C0C0;
+  }
+  
+  /* estilo do dropdown */
+  nav ul li .dropdown-content{
+      display: none; /* Esconde o menu inicialmente */
+      position: absolute; /* Posiciona o submenu em relação ao item pai */
+      background-color: #000000;
+      box-shadow: 0px 8px 16px 0px #F1C27D;
+      z-index: 1; /* Garante que o submenu fique acima de outros elementos */
+      min-height: 160px;
+      padding: 0;
+  }
+  
+  nav ul li .dropdown-content li{
+      margin: 0;
+  }
+  
+  nav ul li .dropdown-content li a{
+      padding: 10px 15px;
+  }
+  
+  nav ul li .dropdown-content li a:hover{
+      background-color: #000000; /* Cor de fundo ao passar o mouse sobre o menu */
+  }
+  
+  /* Exibe o submenu ao passar o mouse sobre o item principal */
+  nav ul li:hover .dropdown-content{
+      display: block;
+  }
+  
+  /* Logo */
+  .logo img{
+      position: absolute;
+      margin-right: auto;
+      margin-left: 100px; /* Margem para trazer ele para o lado direito */
+      margin-top: 10px 10px 30px 20px;
+      padding: 4px;
+      width: 40px;
+      border-radius: 24px; /* Colocar borda redonda */
+  }
